@@ -7,7 +7,7 @@ function init() {
   const playButton = document.querySelector('#expose button');
   const volumeSlider = document.querySelector('#volume');
   const volumeIcon = document.querySelector('#volume-controls img');
-
+  const jsConfetti = new JSConfetti();
 
   hornSelect.addEventListener("change", function() {
     const hornValue = hornSelect.value;
@@ -29,7 +29,7 @@ function init() {
   playButton.addEventListener("click", function(){
     hornAudio.play();
     if (hornSelect.value === 'party-horn') {
-      const jsConfetti = new JSConfetti();
+      
       jsConfetti.addConfetti();
     }
   });
