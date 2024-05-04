@@ -52,13 +52,6 @@ function init() {
       volumeIcon.alt = 'Volume level 3';
     }
   });
-
-
-  
-    
-  
-
-
  
 }
 
